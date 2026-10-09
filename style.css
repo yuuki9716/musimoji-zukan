@@ -1,0 +1,14 @@
+:root { --bg: #f3ecd9; --ink: #2c3e26; --sub: #6b7a5c; --accent: #3a8f3f; --card: #fffdf7; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1d231b; --ink: #e8efe0; --sub: #a9b59c; --accent: #8fd18a; --card: #262e23; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; background: var(--card); min-height: 100vh; box-sizing: border-box; }
+h1 { font-size: 1.6rem; margin: .4em 0; }
+h2 { font-size: 1.15rem; margin-top: 1.8em; border-left: 5px solid var(--accent); padding-left: .5em; }
+a { color: var(--accent); }
+.meta, .nav, .small { color: var(--sub); font-size: .9rem; }
+dt { font-weight: 700; margin-top: .8em; }
+dd { margin-left: 1em; }
+hr { border: none; border-top: 1px solid var(--sub); opacity: .3; margin: 2.5em 0; }
